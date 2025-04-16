@@ -3,33 +3,58 @@
   <body>
     <style>
       html, body {
+
+        font-family: mono;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(https://i.pinimg.com/originals/61/a2/fd/61a2fd1524811daa39de174c049e64e5.gif);
+      }
+      .color {        background-image: linear-gradient(to right, #e98fff, #a159ff);
+        background-clip: text;
+        color: transparent;
       }
       .mid {
         justify-content: center;
         align-items: center;
         display: flex;
-        flex-direction: column;
       }
       .col {
+        
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
       }
       .con {
+        margin-top: 50px;
+        
+        border-image: linear-gradient(to right, #e98fff, #a159ff); /*failed 3:*/
+        border: 4px solid #e98fff;
+        border-radius: 20px;
         padding: 20px;
         width: 450px;
         height: 600px;
-        background-color: blue;
+        background-image: linear-gradient(to right, rgba(10, 10, 10, 0.5), rgba(30, 30, 30, 0.5));
+      }
+      button {
+        margin-left: 30px;
       }
     </style>
     <div class="col">
       <div class="con">
         <div class="col">
-          <h1>Cherry!</h1>
+          <div class="color">
+            <div style="line-height: 0"class="col"> <!--this is good code lol-->
+              <h1>Cherry!</h1>
+            <p>Mostly known for script making</p>
+            <h2>Links</h2>
+            <div class="mid">
+              <button>Discord</button>
+              
+              <button>Discord</button>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
