@@ -17,6 +17,7 @@
         justify-content: center;
         align-items: center;
         display: flex;
+        gap: 5px;
       }
       .col {
         
@@ -37,7 +38,21 @@
         background-image: linear-gradient(to right, rgba(10, 10, 10, 0.5), rgba(30, 30, 30, 0.5));
       }
       button {
-        margin-left: 30px;
+        
+        background-image: linear-gradient(to right, #e98fff, #a159ff);
+        color: white;
+        font-family: mono;
+        border: none;
+        border-radius: 340px;
+        width: 120px;
+        height: 30px;
+        cursor: pointer;
+        background-color: rgba(10, 10, 10, 0.4);
+        transition: transform 0.5s ease;
+      }
+      button:hover {
+        transform: scale(1.05);
+        background-image: linear-gradient(to right, #f3c4ff, #c496ff);
       }
     </style>
     <div class="col">
